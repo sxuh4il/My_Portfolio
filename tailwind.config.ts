@@ -28,9 +28,15 @@ export default {
 				portfolio: {
 					primary: '#333333',
 					secondary: '#666666',
-					accent: '#0FA0CE',
+					accent: '#3282b8', // Nouvelle couleur principale bleue
 					light: '#F6F6F7',
 					muted: '#9F9EA1',
+					blue: {
+						light: '#bbe1fa',
+						medium: '#3282b8',
+						dark: '#0f4c75',
+						darker: '#1e2a3a',
+					}
 				},
 				primary: {
 					DEFAULT: 'hsl(var(--primary))',
@@ -106,8 +112,8 @@ export default {
 				'slide-in': 'slide-in 0.5s ease-out'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				heading: ['SF Pro Display', 'Inter', 'sans-serif']
+				sans: ['Poppins', 'Inter', 'sans-serif'],
+				heading: ['Montserrat', 'SF Pro Display', 'Inter', 'sans-serif']
 			}
 		}
 	},

@@ -1,11 +1,9 @@
 
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Mail, MapPin, Github, Linkedin, Phone } from 'lucide-react';
 
 const Hero = () => {
-  const scrollRef = useRef<HTMLDivElement>(null);
-
   // Scroll down function
   const scrollToProjects = () => {
     const projectsSection = document.getElementById('projects');
@@ -19,53 +17,119 @@ const Hero = () => {
       id="home" 
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-50"></div>
+      {/* Background avec gradient bleu */}
+      <div className="absolute inset-0 bg-gradient-to-b from-portfolio-blue-medium to-portfolio-blue-dark"></div>
       
       {/* Content container */}
       <div className="section-container relative z-10">
-        <div className="max-w-3xl mx-auto text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+          {/* Profile Info */}
+          <div className="md:col-span-2">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
+              <span className="text-white inline-block px-3 py-1 text-sm font-medium rounded-full mb-6 border border-white/20 bg-white/5">
+                AI Engineering Student
+              </span>
+            </motion.div>
+            
+            <motion.h1 
+              className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight mb-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.2 }}
+            >
+              Bouri <span className="text-portfolio-blue-light">Souhail</span>
+            </motion.h1>
+            
+            <motion.p 
+              className="text-lg text-white/80 max-w-2xl mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.4 }}
+            >
+              AI Engineering Student at <span className="font-semibold">ENIADB</span> - École Nationale d'Intelligence Artificielle et du Digital. Passionné par l'intelligence artificielle et le développement web.
+            </motion.p>
+            
+            {/* Contact Info */}
+            <motion.div 
+              className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.6 }}
+            >
+              <div className="flex items-center gap-2 text-white/90">
+                <Mail size={18} className="text-portfolio-blue-light" />
+                <span>bourisouhail5@gmail.com</span>
+              </div>
+              
+              <div className="flex items-center gap-2 text-white/90">
+                <Phone size={18} className="text-portfolio-blue-light" />
+                <span>+212 693249373</span>
+              </div>
+              
+              <div className="flex items-center gap-2 text-white/90">
+                <MapPin size={18} className="text-portfolio-blue-light" />
+                <span>zahwa ain maaza, meknes, Maroc</span>
+              </div>
+              
+              <div className="flex items-center gap-2 text-white/90">
+                <Github size={18} className="text-portfolio-blue-light" />
+                <a href="https://github.com/sxuh4il" target="_blank" rel="noopener noreferrer" className="hover:text-portfolio-blue-light transition-colors">
+                  github.com/sxuh4il
+                </a>
+              </div>
+              
+              <div className="flex items-center gap-2 text-white/90">
+                <Linkedin size={18} className="text-portfolio-blue-light" />
+                <a href="https://linkedin.com/in/souhail bouri" target="_blank" rel="noopener noreferrer" className="hover:text-portfolio-blue-light transition-colors">
+                  linkedin.com/in/souhail bouri
+                </a>
+              </div>
+            </motion.div>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.8 }}
+              className="flex gap-4"
+            >
+              <motion.button
+                onClick={scrollToProjects}
+                className="px-6 py-3 rounded-md bg-white text-portfolio-blue-dark font-semibold shadow-sm hover:shadow-md hover:translate-y-[-2px] transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Voir mes projets
+              </motion.button>
+              
+              <motion.a
+                href="#contact"
+                className="px-6 py-3 rounded-md border border-white/30 text-white font-semibold shadow-sm hover:bg-white/10 hover:shadow-md hover:translate-y-[-2px] transition-all"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Me contacter
+              </motion.a>
+            </motion.div>
+          </div>
+          
+          {/* Profile Image */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
-            <span className="text-portfolio-accent inline-block px-3 py-1 text-sm font-medium rounded-full mb-6 border border-portfolio-accent/20 bg-portfolio-accent/5">
-              Welcome to my portfolio
-            </span>
-          </motion.div>
-          
-          <motion.h1 
-            className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-portfolio-primary tracking-tight mb-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            Creating <span className="text-portfolio-accent">beautiful</span> digital experiences
-          </motion.h1>
-          
-          <motion.p 
-            className="text-lg md:text-xl text-portfolio-secondary max-w-2xl mx-auto mb-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-          >
-            I'm a designer and developer focused on crafting clean & user-friendly experiences. I'm passionate about building solutions that are both functional and beautiful.
-          </motion.p>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            className="flex justify-center md:justify-end"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <motion.button
-              onClick={scrollToProjects}
-              className="px-6 py-3 rounded-md bg-portfolio-primary text-white font-semibold shadow-sm hover:shadow-md hover:translate-y-[-2px]"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              View my work
-            </motion.button>
+            <div className="relative w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-white/20 shadow-xl">
+              <img 
+                src="/lovable-uploads/profile.png" 
+                alt="Bouri Souhail" 
+                className="w-full h-full object-cover"
+              />
+            </div>
           </motion.div>
         </div>
       </div>
@@ -84,7 +148,7 @@ const Hero = () => {
         }}
         onClick={scrollToProjects}
       >
-        <ArrowDown className="text-portfolio-accent animate-bounce" />
+        <ArrowDown className="text-white animate-bounce" />
       </motion.div>
     </section>
   );

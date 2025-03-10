@@ -62,11 +62,37 @@ const Index = () => {
           <Contact />
         </main>
 
-        <footer className="bg-white py-10 border-t border-gray-100">
+        <footer className="bg-portfolio-blue-darker py-10 text-white/70">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <p className="text-portfolio-secondary">
-              © {new Date().getFullYear()} Portfolio. All rights reserved.
+            <p className="mb-2">
+              © {new Date().getFullYear()} Bouri Souhail. Tous droits réservés.
             </p>
+            <div className="flex justify-center space-x-4 mt-4">
+              <a 
+                href="https://github.com/sxuh4il" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-portfolio-blue-light transition-colors"
+              >
+                GitHub
+              </a>
+              <span>•</span>
+              <a 
+                href="https://linkedin.com/in/souhail bouri" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-portfolio-blue-light transition-colors"
+              >
+                LinkedIn
+              </a>
+              <span>•</span>
+              <a 
+                href="mailto:bourisouhail5@gmail.com"
+                className="hover:text-portfolio-blue-light transition-colors"
+              >
+                Email
+              </a>
+            </div>
           </div>
         </footer>
       </motion.div>
