@@ -20,7 +20,9 @@ I design and develop innovative solutions by combining technology and artificial
 
 ## 💡 What you'll find here:
 🚀 Modern projects powered by the latest technologies
+
 🤖 Smart solutions integrating AI and automation
+
 🎨 A polished design with an optimized user experience
 
 📌 My goal? Turning ideas into powerful and intuitive digital realities.
