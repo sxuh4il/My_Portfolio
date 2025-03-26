@@ -1,6 +1,4 @@
 # 🚀 Welcome to My Portfolio
-🌐 Project Info
-🔗 Live URL: Visit Project
 
 🛠️ Tech Stack
 This project is built with:
