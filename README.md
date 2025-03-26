@@ -15,23 +15,15 @@ This project is built with:
 
 🎨 Tailwind CSS – Utility-first styling
 
-🛠️ How to Run Locally
-sh
-Copier
-Modifier
-# 1️⃣ Clone the repository
-git clone <YOUR_GIT_URL>
 
-# 2️⃣ Navigate to the project directory
-cd <YOUR_PROJECT_NAME>
+I design and develop innovative solutions by combining technology and artificial intelligence. Passionate about creating interactive experiences, I explore the endless possibilities of web development, AI, and automation.
 
-# 3️⃣ Install dependencies
-npm install
+## 💡 What you'll find here:
+🚀 Modern projects powered by the latest technologies
+🤖 Smart solutions integrating AI and automation
+🎨 A polished design with an optimized user experience
 
-# 4️⃣ Start the development server
-npm run dev
-🚀 Deployment
-Easily deploy this project using Netlify, Vercel, or any hosting provider supporting modern web applications.
+📌 My goal? Turning ideas into powerful and intuitive digital realities.
 
-🎯 Want a Custom Domain?
+Ready to explore? 🚀
 You can deploy this project on Netlify or Vercel and connect your custom domain for a professional touch!
